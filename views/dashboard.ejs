@@ -1,0 +1,35 @@
+<h1 class="mt-4">Leave Application Form</h1>
+<p class="lead mb-3">Welcome <%= user.name %>
+</p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+
+
+<form>
+<div class="form-group">
+    <label for="inputState">Leave Type</label>
+    <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Sick</option>
+        <option>Paid Leave</option>
+        <option>Casual</option>
+
+    </select>
+</div>
+<div class="col">
+<div class="form-group row">
+    <label for="example-date-input" class="col-2 col-form-label">Leave From</label>
+    <div class="">
+        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="example-date-input" class="col-2 col-form-label">Leave To</label>
+    <div class="">
+        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+    </div>
+</div>
+</div>
+
+  
+    <button type="submit" class="btn btn-primary">Apply</button>
+</form>
